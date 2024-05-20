@@ -1,0 +1,8 @@
+prefix=/home/robot/dashgo_ws/devel
+
+Name: dashgo_gazebo
+Description: Description of dashgo_gazebo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

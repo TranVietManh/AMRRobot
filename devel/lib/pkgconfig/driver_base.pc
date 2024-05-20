@@ -1,0 +1,8 @@
+prefix=/home/robot/dashgo_ws/devel
+
+Name: driver_base
+Description: Description of driver_base
+Version: 1.6.9
+Cflags: -I/home/robot/dashgo_ws/devel/include -I/home/robot/dashgo_ws/src/driver_common/driver_base/include -I/usr/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime std_msgs
