@@ -1,0 +1,8 @@
+prefix=/home/robot/dashgo_ws/install
+
+Name: laserline
+Description: Description of laserline
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -llibhokuyo
+Requires: rosconsole message_runtime

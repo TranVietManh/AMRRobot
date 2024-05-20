@@ -1,0 +1,8 @@
+prefix=/home/robot/dashgo_ws/install
+
+Name: dashgo_bot
+Description: Description of dashgo_bot
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

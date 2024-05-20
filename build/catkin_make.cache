@@ -1,0 +1,2 @@
+dashgo/dashgo_bot:dashgo/dashgo_driver:dashgo/dashgo_nav:dashgo/dashgo_rviz:dashgo/dashgo_simulations/dashgo_description:dashgo/dashgo_simulations/dashgo_gazebo:dashgo/dashgo_tools:dashgo/ira_laser_tools:dashgo/pathgo_imu:dashgo/rplidar_ros:dashgo/ydlidar_v1.3.1:robot_pose_publisher
+-DCATKIN_DEVEL_PREFIX=/home/robot/dashgo_ws/devel -DCMAKE_INSTALL_PREFIX=/home/robot/dashgo_ws/install -G Unix Makefiles
