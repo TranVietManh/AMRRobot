@@ -1,0 +1,10 @@
+### Chay Gui ####
+    python M_v3.py
+-------------------------
+
+Setup tọa độ điểm: data/test.yaml
+
+------Phan lay toa do diem em moi viet la file amcl.py nhe anh ----------------
+
+---- Sau khi anh navigation anh chay file amcl.py ------------
+    python amcl.py

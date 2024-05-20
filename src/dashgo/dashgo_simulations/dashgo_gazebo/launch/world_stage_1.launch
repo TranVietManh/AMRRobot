@@ -1,0 +1,45 @@
+<launch>
+  <param name="use_sim_time" value="true"/>
+  <arg name="x_pos" default="0.0"/>
+  <arg name="y_pos" default="0.0"/>
+  <arg name="z_pos" default="0.0"/>
+<!--
+  <node
+    name="tf_footprint_base"
+    pkg="tf"
+    type="static_transform_publisher"
+    args="0 0 0 0 0 0 odom base_footprint 40" />
+
+  <node
+    name="fake_joint_calibration"
+    pkg="rostopic"
+    type="rostopic"
+    args="pub /calibrated std_msgs/Bool true" />
+-->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find dashgo_gazebo)/worlds/turtlebot3_stage_1.world"/>
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+    <arg name="headless" value="false"/>
+    <arg name="debug" value="false"/>
+  </include>
+
+  <node pkg="nodelet" type="nodelet" name="mobile_base_nodelet_manager" args="manager"/>
+  <node pkg="nodelet" type="nodelet" name="cmd_vel_mux"
+        args="load yocs_cmd_vel_mux/CmdVelMuxNodelet mobile_base_nodelet_manager">
+    <param name="yaml_cfg_file" value="$(find dashgo_gazebo)/param/mux.yaml" />
+    <remap from="cmd_vel_mux/output" to="mobile_base/commands/velocity"/>
+  </node>  
+
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"
+    respawn="false" output="screen">
+    <param name="publish_frequency" value="50.0" />
+    <param name="ignore_timestamp" value="true" />
+    <!-- <remap from="/joint_states" to="/dashgo/joint_states" /> -->
+  </node>
+
+  <param name="robot_description" command="$(find xacro)/xacro --inorder $(find dashgo_description)/urdf/dashgobase/dashgo.urdf.xacro" />
+
+  <node pkg="gazebo_ros" type="spawn_model" name="spawn_urdf"  args="-urdf -model dashgobase -x $(arg x_pos) -y $(arg y_pos) -z $(arg z_pos) -param robot_description" />
+</launch>

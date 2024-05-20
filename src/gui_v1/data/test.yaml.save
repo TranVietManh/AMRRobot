@@ -1,0 +1,18 @@
+- Detail: ''
+  Index: 0 
+  Name: Start 
+  TimeDelay: 10
+  position: {x: -3.64093690776, y: 11.1466135818-0.450984575285}
+  quaternion: {r1: 0.0, r2: 0.0, r3: 0.063, r4: 0.995}
+- Name: Inter 1
+  Detail: ''
+  Index: 1
+  TimeDelay: 0
+  position: {x: 2.795, y: -0.084}
+  quaternion: {r1: 0.0, r2: 0.0, r3: -0.176, r4: 0.984}
+- Name: Stop
+  Index: 2 
+  Detail: ''
+  TimeDelay: 10
+  position: {x: 9.97, y: -0.94}
+  quaternion: {r1: 0.0, r2: 0.0, r3: -0.999, r4: 0.027}

@@ -1,0 +1,57 @@
+- Detail: ''
+  Index: 0 
+  Name: Start 
+  TimeDelay: 3
+  position: {x: 0.854791690979, y: -0.470135688859}
+  quaternion: {r1: 0.0, r2: 0.0, r3: -0.367113793518, r4: 0.930176038505}
+- Name: Inter 1
+  Detail: ''
+  Index: 1
+  TimeDelay: 0
+  position: {x: 0.48465514183, y: 0.376104831696}
+  quaternion: {r1: 0.0, r2: 0.0, r3: 0.377815813877, r4: 0.925880775686}
+
+- Name: Inter 2
+  Detail: ''
+  Index: 2
+  TimeDelay: 0
+  position: {x: -1.01534509659, y: -2.15246725082}
+  quaternion: {r1: 0.0, r2: 0.0, r3: 0.946383991427, r4: -0.323043868184}
+- Name: Inter 21
+  Detail: ''
+  Index: 3
+  TimeDelay: 0
+  position: {x: 4.60073153226, y: 1.74894634383}
+  quaternion: {r1: 0.0, r2: 0.0, r3: -0.301997907576, r4: 0.953308587929}
+- Name: Inter 22
+  Detail: ''
+  Index: 4
+  TimeDelay: 0
+  position: {x: 5.66794356504, y: 1.2886946433}
+  quaternion: {r1: 0.0, r2: 0.0, r3: -0.194776001916, r4: 0.980847750203}
+- Name: Inter 23
+  Detail: ''
+  Index: 5
+  TimeDelay: 3
+  position: {x: 5.61628367114, y: 1.29146007477}
+  quaternion: {r1: 0.0, r2: 0.0, r3: -0.809458327348, r4: 0.587177329507}
+
+- Name: Inter 3
+  Detail: ''
+  Index: 6
+  TimeDelay: 0
+  position: {x: 0.493172366631, y: -7.01870362036}
+  quaternion: {r1: 0.0, r2: 0.0, r3: -0.854757695736, r4: 0.519027245509}
+- Name: Inter 31
+  Detail: ''
+  Index: 7
+  TimeDelay: 3
+  position: {x: 1.3582370625, y: -7.45000744936}
+  quaternion: {r1: 0.0, r2: 0.0, r3: 0.985613986455, r4: 0.169012040113}
+
+- Name: Stop
+  Index: 8 
+  Detail: ''
+  TimeDelay: 3
+  position: {x: 0.344331026062, y: -2.61365151362}
+  quaternion: {r1: 0.0, r2: 0.0, r3: 0.980402579227, r4: 0.197004524427}

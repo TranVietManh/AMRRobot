@@ -1,0 +1,32 @@
+- Name: 'A'
+  Index: 0
+  Detail: 'Vị trí nhận hàng'
+  Audio: 'nhan_hang.mp3'
+  TimeDelay: 5
+  position: {x: -3.29181, y: 1.49623}
+  quaternion: {r1: 0, r2: 0, r3: -0.61494, r4: 0.78858}
+
+- Name: 'B'
+  Index: 1
+  Detail: 'Vị trí trung gian'
+  Audio: 'ting_ting.mp3'
+  TimeDelay: 0
+  position: {x: 1.42214, y: -3.02979}
+  quaternion: {r1: 0, r2: 0, r3: -0.9784, r4: 0.20673}
+
+
+- Name: 'C'
+  Index: 2
+  Detail: 'Vị trí trả hàng C'
+  Audio: 'tra_hang.mp3'
+  TimeDelay: 15
+  position: {x: -0.38055, y: -5.68017}
+  quaternion: {r1: 0, r2: 0, r3: -0.94021, r4: 0.3406}
+
+- Name: 'D'
+  Index: 2
+  Detail: 'Vị trí trả hàng C'
+  Audio: 'ting_ting.mp3'
+  TimeDelay: 15
+  position: {x: -2.98096, y: 4.02629}
+  quaternion: {r1: 0, r2: 0, r3: -0.99872, r4: 0.05055}
